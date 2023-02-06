@@ -12,6 +12,7 @@ import airbnbLogo from "../images/airbnb-logo.png";
 export default function Hero() {
   return (
     <section className="hero-container">
+      <img className="hero-logo" src={airbnbLogo} alt="airbnb-logo" />
       <div className="hero">
         <img src={img1} alt="hero-img" />
         <img src={img2} alt="hero-img" />
@@ -23,7 +24,6 @@ export default function Hero() {
         <img src={img8} alt="hero-img" />
       </div>
       <div className="hero-text">
-        <img className="hero-logo" src={airbnbLogo} alt="airbnb-logo" />
         <span className="text-line"></span>
         <h1 className="hero-title">Nº1 online marketplace</h1>
         <h3>Short-term homestays and experiences all around the world.</h3>
