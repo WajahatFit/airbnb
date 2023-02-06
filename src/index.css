@@ -103,7 +103,6 @@ body {
   border-bottom: 2px solid rgb(85, 85, 85);
   display: block;
   width: 50%;
-  margin: 5rem 0;
 }
 .hero-container {
   display: flex;
@@ -114,14 +113,18 @@ body {
 @media screen and (max-width: 1024px) {
   .hero {
     --num-cols: 8;
-    --row-height: 100px;
+    --row-height: 140px;
   }
 }
 @media only screen and (min-width: 1200px) {
+  .hero {
+    --num-cols: 8;
+    --row-height: 200px;
+  }
   .hero-text {
     display: flex;
     justify-content: space-around;
-    height: 70vh;
+    height: 30vh;
   }
 
   .hero-text p {
@@ -135,6 +138,13 @@ body {
   .hero-text h1 {
     font-size: 56px;
   }
+  .hero-logo {
+    padding-top: 130px;
+  }
+
+  .hero img {
+    height: 20;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -143,7 +153,7 @@ body {
   }
   .hero {
     --num-cols: 6;
-    --row-height: 100px;
+    --row-height: 80px;
   }
   .hero > img {
     border-radius: 15px;
@@ -184,19 +194,17 @@ body {
   }
 
   .hero-text > p {
-    width: 100%;
-    padding: 20px 0;
+    width: 500px;
   }
   .hero-title {
     font-size: 42px;
     line-height: normal;
     width: 100%;
-    padding-bottom: 30px;
   }
 
   .hero-logo {
-    width: 60%;
-    padding-bottom: 60px;
+    width: 50%;
+    padding-top: 90px;
   }
 
   .text-line {
@@ -207,6 +215,9 @@ body {
     display: flex;
     align-items: center;
     width: min-content;
+    justify-content: space-around;
+    height: 20vh;
+    padding: 10px;
   }
   .navbar img {
     width: 80px;
