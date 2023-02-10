@@ -172,12 +172,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .navbar {
-    width: 100%;
-  }
   .hero {
     --num-cols: 6;
-    --row-height: 80px;
+    --row-height: 100px;
   }
   .hero > img {
     border-radius: 15px;
@@ -218,17 +215,16 @@ body {
   }
 
   .hero-text > p {
-    width: 500px;
+    width: 100%;
   }
-  .hero-title {
-    font-size: 42px;
-    line-height: normal;
+  .hero-text > h1 {
+    font-size: 36px;
     width: 100%;
   }
 
   .hero-logo {
     width: 50%;
-    padding-top: 90px;
+    padding-top: 150px;
   }
 
   .text-line {
@@ -238,12 +234,11 @@ body {
   .hero-text {
     display: flex;
     align-items: center;
-    width: min-content;
+    width: 100%;
     justify-content: space-around;
-    height: 20vh;
-    padding: 10px;
+    height: 40vh;
   }
   .navbar img {
-    width: 80px;
+    width: 100px;
   }
 }
