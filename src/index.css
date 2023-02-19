@@ -127,13 +127,14 @@ body {
   .hero-text p {
     font-size: 18px;
     line-height: 2rem;
+    width: 100%;
   }
   .hero-text h3 {
     font-size: 22px;
   }
 
   .hero-text h1 {
-    font-size: 56px;
+    font-size: 42px;
   }
   .hero-logo {
     padding-top: 120px;
@@ -141,6 +142,37 @@ body {
 
   .hero img {
     height: 20;
+  }
+
+  .card {
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .card--img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .card--stats img {
+    width: 15px;
+  }
+  .card--stats {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    gap: 10px;
+  }
+  .grey {
+    color: #918e9b;
+  }
+  .bold {
+    font-weight: bold;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -171,6 +203,36 @@ body {
 
   .hero img {
     height: 20;
+  }
+  .card {
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .card--img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .card--stats img {
+    width: 15px;
+  }
+  .card--stats {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    gap: 10px;
+  }
+  .grey {
+    color: #918e9b;
+  }
+  .bold {
+    font-weight: bold;
   }
 }
 
@@ -247,7 +309,17 @@ body {
 
   .card {
     width: 175px;
-    font-size: 12px;
+    font-size: 14px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
   }
   .card--img {
     width: 100%;
@@ -257,6 +329,7 @@ body {
   }
   .card--stats img {
     width: 15px;
+    margin-bottom: 3px;
   }
   .card--stats {
     display: flex;
